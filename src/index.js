@@ -72,9 +72,6 @@ submitButton.addEventListener('click', () => {
 });
 
 
-// let weatherArr;
-
-
 async function callWeatherAPI(url) {
   try {
     const response = await fetch(url);
