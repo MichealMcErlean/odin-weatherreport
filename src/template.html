@@ -3,9 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Weather Report</title>
 </head>
 <body>
-  
+  <header>
+    <h1>Weather Report</h1>
+    <h2>An Odin Project exercise</h2>
+  </header>
+  <main>
+    <form action="/" method="post">
+      <p>Please enter a location below. All fields required.</p>
+      <div class="form-grid">
+        <label for="town">Town *</label>
+        <input type="text" name="town" id="town" required placeholder="Your town here">
+        <label for="state">State / Province *</label>
+        <input type="text" name="state" id="state" required placeholder="State or province here">
+        <label for="country">Country *</label>
+        <input type="text" name="country" id="country" required placeholder="Country here">
+        <fieldset>
+          <legend>Temperature units?</legend>
+          <input type="radio" name="tempType" id="celsius" value="metric" checked>
+          <label for="celsius">Celsius</label>
+          <input type="radio" name="tempType" id="fahrenheit" value="US">
+          <label for="fahrenheit">Fahrenheit</label>
+        </fieldset>
+        <button type="button" id="clear">Clear Fields</button>
+        <button type="button" id="submit">Check The Weather</button>
+      </div>
+    </form>
+    <div class="weather-report">
+      Loading, please stand by...
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Micheal McErlean 2025.</p>
+  </footer>
 </body>
 </html>

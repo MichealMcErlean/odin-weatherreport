@@ -1,0 +1,1 @@
+import {rain} from './images/rain.svg';
